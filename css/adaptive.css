@@ -1,0 +1,249 @@
+/* Базовые стили остаются, как есть */
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        font-size: 4vw;
+        overflow-x: scroll;
+    }
+
+    .container {
+        padding: 0 20px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header .container {
+        display: grid;
+        align-items: start;
+        justify-content: center;
+    }
+
+    section .container {
+        overflow: visible;
+    }
+
+    .header {
+        margin-bottom: 20vw;
+    }
+
+    .where_block_3 p:nth-child(1) {
+        font-size: 4vw;
+    }
+
+    .sec_title {
+        margin-bottom: 20vw;
+    }
+
+    .header__h1 {
+        /* grid-template-columns: 1fr; */
+        /* text-align: center; */
+        width: 100%;
+        display: block;
+        /* display: none; */
+        transform: scale(0.5);
+        margin-top: 10vw;
+        overflow: hidden;
+        padding: 0 10vw;
+    }
+
+    .header__h1 .header__h1_img_block {
+        /* grid-column: auto; */
+        display: block;
+        /* height: 100%; */
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .header__h1 .header__h1_img_block img {
+        width: auto;
+    }
+
+    .header__h1 .plac {
+        display: none;
+    }
+
+    .header__text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 4vw;
+        margin-top: 5vw;
+        display: none;
+        line-height: 1.3;
+    }
+
+    .header__img {
+        top: 50%;
+        transform: translateY(-20%);
+        left: 0;
+        width: 100vw;
+        /* position: static; */
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        /* display: none; */
+    }
+
+    .sec_title img:nth-child(1) {
+        width: 90%;
+    }
+
+    p {
+        font-size: 4vw;
+        /* !important; */
+    }
+
+    .where_block_small {
+        font-size: 4vw !important;
+        margin-bottom: 2vw;
+    }
+
+    .where_block_2 p:nth-child(2) {
+        margin-bottom: 5vw;
+    }
+
+    .sec_cont {
+        /* grid-template-columns: 1fr; */
+        display: block;
+        margin-bottom: 10vw;
+        width: 100%;
+    }
+
+    .where__content_item {
+        grid-template-columns: 1fr;
+        margin-bottom: 10vw;
+    }
+
+    .where__content_item>p,
+    .where__content_item_right {
+        grid-column: auto;
+        font-size: 4vw;
+    }
+
+    .where__content_item_right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .where_block {
+        min-height: auto;
+        padding: 5vw 2vw;
+        margin-bottom: 5vw;
+    }
+
+    .where_block_6 p {
+        width: 100%;
+    }
+
+    .where_block>p {
+        font-size: 4vw;
+    }
+
+    .where_block_1 p,
+    .where_block_2 p,
+    .where_block_5 p {
+        font-size: 10vw;
+        /* !important; */
+    }
+
+    .where_block_3 p {
+        font-size: 4vw;
+        /* !important; */
+    }
+
+    .dresscode {}
+
+    .where_block_6 {
+        grid-column: auto;
+        /* flex-direction: column; */
+        gap: 5vw;
+    }
+
+    .dresscode__circle {
+        padding: 10vw;
+    }
+
+    .dresscode__text {
+        margin-bottom: 10vw;
+        font-size: 4vw;
+    }
+
+    section {
+        padding-bottom: 20vw;
+    }
+
+    .dresscode__block {
+        height: 50vw;
+        max-width: 100%;
+        margin-bottom: 5vw;
+        width: 80vw;
+    }
+
+    .scroll_block {
+        width: auto;
+        overflow-x: scroll;
+    }
+
+    .scroll_wrap {
+        overflow: hidden;
+        width: auto;
+    }
+
+    .where_block_7 {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    form {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 5vw;
+    }
+
+    label {
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+
+    input[type="text"],
+    input[type="checkbox"],
+    input[type="radio"] {
+        padding: 2vw;
+        margin-top: 1vw;
+    }
+
+    .checkbox-container,
+    .radio-container {
+        padding-left: 3vw;
+        margin-bottom: 3vw;
+        font-size: 4vw;
+    }
+
+    .checkmark {
+        top: -0.5vw;
+        left: 0;
+        height: 3vw;
+        width: 3vw;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .radio-container {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    .submit-button {
+        padding: 2vw;
+        font-size: 4vw;
+    }
+}

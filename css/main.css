@@ -1,0 +1,365 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #474747;
+}
+
+.container {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.header {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10vw;
+}
+
+section {
+    padding-bottom: 10vw;
+    padding-top: 10vw;
+}
+
+.sec_title {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5vw;
+}
+
+.sec_title img:nth-child(1) {
+    position: relative;
+    z-index: 2;
+}
+
+.ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.brill {
+    z-index: 3;
+}
+
+.sec_cont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.header__h1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+.header__h1 .header__h1_img_block {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.header__h1 .plac {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.header__h1 .header__h1_img_block:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.header__text {
+    font-size: 1vw;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1vw;
+}
+
+.header__img {
+    position: absolute;
+    left: 10%;
+    width: 35vw;
+}
+
+.header__img img {
+    width: 100%;
+}
+
+/* .where__content {
+    grid-column-start: 1;
+    grid-column-end: 5;
+} */
+
+.where__content_item {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+
+    border-top: 1px solid #E1E1E1;
+    padding-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.where__content_item>p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.where_block {
+    width: 100%;
+    border-radius: 1.3vw;
+}
+
+.where_block p {}
+
+.where_block_small {
+    font-size: 1vw !important;
+}
+
+.where__content_item_right {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    align-items: start;
+    gap: 1vw;
+    justify-content: space-between;
+    padding-top: 5vw;
+}
+
+.where_block_1 {
+    background: url(./../img/image\ 6.png) no-repeat center top /cover;
+}
+
+.where_block_2 {
+    background: url(./../img/image\ 7.png) no-repeat center top /cover;
+    margin-top: 3vw;
+}
+
+.where_block_1,
+.where_block_2 {
+    min-height: 10vw;
+    padding: 2vw 0.7vw 0.7vw 0;
+    display: grid;
+    align-items: end;
+    justify-content: end;
+    text-align: right;
+
+}
+
+.where_block_2 p:nth-child(2) {
+    margin-bottom: 1vw;
+}
+
+.where_block_1 p,
+.where_block_2 p,
+.where_block_5 p {
+    font-size: 5.245vw;
+    font-weight: 500;
+}
+
+.where__link {
+    text-decoration: underline;
+}
+
+.where__bold {
+    font-weight: 600;
+}
+
+.where_block_3 p:nth-child(1) {
+    margin-bottom: 1vw;
+    line-height: 1.4;
+    font-size: 1.2vw;
+}
+
+.where_block_4 {
+    background-color: #858585;
+    height: 100%;
+}
+
+.dresscode__text {
+    font-size: 1vw;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    line-height: 1.4;
+    margin-bottom: 3vw;
+}
+
+
+
+.where_block_6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    gap: 2vw;
+    /* justify-content: space-between; */
+}
+
+.where_block_6 p {
+    font-size: 1vw;
+    line-height: 1.4;
+    width: 50%;
+    margin-bottom: 1vw;
+}
+
+.dresscode__circle {
+    border-radius: 100%;
+    padding: 2vw;
+    background-color: #b3b3b3;
+}
+
+.dresscode {
+    overflow: hidden;
+}
+
+.where_block_7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+
+}
+
+.dresscode__block {
+    height: 50vh;
+    background-color: #b3b3b3;
+    max-width: 48%;
+    width: 100%;
+    border-radius: 1.4vw;
+}
+
+
+form {
+    max-width: 30vw;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 2vw;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5vw;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="checkbox"],
+input[type="radio"] {
+    width: 100%;
+    padding: 0.8vw;
+    margin-top: 0.4vw;
+    border: 1px solid #ccc;
+    border-radius: 2vw;
+    background-color: #f0f0f0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-top: 0;
+}
+
+.checkbox-container,
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 2vw;
+    margin-bottom: 1.2vw;
+    cursor: pointer;
+    font-size: 1vw;
+    user-select: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: -0.3vw;
+    left: 0;
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 0.8vw;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: #1f1f1f;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.radio-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 1.4vw;
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: #fff;
+    color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-container.active {
+    background-color: #1f1f1f;
+    color: #fff;
+    border-color: #1f1f1f;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+.submit-button:hover {
+    background-color: #333;
+}
