@@ -125,7 +125,7 @@
     .where__content_item_right {
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 5vw;
+        padding-top: 10vw;
     }
 
     .where_block {
