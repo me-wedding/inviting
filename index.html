@@ -164,17 +164,16 @@
       event.preventDefault();
 
       emailjs.sendForm('service_r8wr3k8', 'template_pmkdlvk', this)
-        .then(function() {
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
           alert('Письмо успешно отправлено!');
         }, function(error) {
+          console.error('FAILED...', error);
           alert('Ошибка при отправке письма. Пожалуйста, попробуйте снова.');
-          console.log('FAILED...', error);
         });
     });
   }
 </script>
-
-
         </div>
     </section>
     <section class="faq">
