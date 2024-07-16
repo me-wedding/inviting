@@ -156,14 +156,14 @@
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
   (function() {
-    emailjs.init("nWIiz6r_vzv6tS0M2"); // Замените YOUR_USER_ID на ваш User ID (API Key) из Dashboard EmailJS
+    emailjs.init("9RzBHwL3h-70xo_B5"); // Замените YOUR_USER_ID на ваш User ID (API Key) из Dashboard EmailJS
   })();
   
   window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
 
-      emailjs.sendForm('service_wj5ld2r', 'template_pmkdlvk', this)
+      emailjs.sendForm('service_4riogsy', 'template_fitp9yl', this)
         .then(function(response) {
           console.log('SUCCESS!', response.status, response.text);
           alert('Письмо успешно отправлено!');
