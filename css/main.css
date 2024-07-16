@@ -2,6 +2,10 @@
     outline: 1px solid red;
 } */
 
+.submit-button{
+    margin-bottom: 1rem;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     color: #474747;
