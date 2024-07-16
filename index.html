@@ -128,31 +128,52 @@
                     Пожалуйста, подтвердите свое присутсвие или отсутствие, заполнив анкету
                 </p>
             </div>
-            <form class="form__form" action="send_email.php" method="POST">
-                <div class="form-group">
-                    <label for="first-name">Имя</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Фамилия</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div class="form-group">
-                    <label class="checkbox-container">На своей машине
-                        <input type="checkbox" name="car">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="form-group radio-group">
-                    <label class="radio-container">Приду
-                        <input type="radio" name="attendance" value="yes" checked>
-                    </label>
-                    <label class="radio-container">Не приду
-                        <input type="radio" name="attendance" value="no">
-                    </label>
-                </div>
-                <button type="submit" class="submit-button">Подтвердить</button>
-            </form>
+            <form class="form__form" id="contact-form">
+    <div class="form-group">
+        <label for="first-name">Имя</label>
+        <input type="text" id="first-name" name="first-name" required>
+    </div>
+    <div class="form-group">
+        <label for="last-name">Фамилия</label>
+        <input type="text" id="last-name" name="last-name" required>
+    </div>
+    <div class="form-group">
+        <label class="checkbox-container">На своей машине
+            <input type="checkbox" name="car">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div class="form-group radio-group">
+        <label class="radio-container">Приду
+            <input type="radio" name="attendance" value="yes" checked>
+        </label>
+        <label class="radio-container">Не приду
+            <input type="radio" name="attendance" value="no">
+        </label>
+    </div>
+    <button type="submit" class="submit-button">Подтвердить</button>
+</form>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("nWIiz6r_vzv6tS0M2");
+  })();
+  
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      // These IDs from the previous steps
+      emailjs.sendForm('service_r8wr3k8', 'template_pmkdlvk', this)
+        .then(function() {
+          console.log('SUCCESS!');
+        }, function(error) {
+          console.log('FAILED...', error);
+        });
+    });
+  }
+</script>
+
         </div>
     </section>
     <section class="faq">
