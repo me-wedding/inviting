@@ -196,6 +196,12 @@ p {
     height: 10vw;
 }
 
+.where_block_4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .dresscode__text {
     font-size: 1vw;
     grid-column-start: 3;
