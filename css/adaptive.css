@@ -233,6 +233,10 @@
         width: 3vw;
     }
 
+    .where__block_4{
+        display: none;
+    }
+
     .radio-group {
         flex-direction: column;
         gap: 3vw;
